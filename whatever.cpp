@@ -34,7 +34,12 @@ void printPattern(int n) {
 }
 
 int main() {
-    int n = 7; // Must be odd
-    printPattern(n);
+    int n = 7;
+    cout<<&n<<endl;
+
+    int* ptr = &n;
+    cout<<ptr<<endl;
+
+    String ptr = &n;
     return 0;
 }
